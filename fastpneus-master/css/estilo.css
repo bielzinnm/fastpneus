@@ -1,6 +1,8 @@
+/*font do site todo */
 h1{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+/*font do site todo */
 
 /*mini banners */
 #mini-banners {
@@ -11,10 +13,12 @@ h1{
     padding:  2em 0,3em;
     border-radius: 0; 
     margin-bottom: 1em;
+    margin-top: 10px;
 }
 
 #mini-banners i{
     font-size: 4em;
+    
 }
 
 #mini-banners .card-title {
@@ -24,6 +28,125 @@ h1{
 
 #mini-banners .btn {
     margin-top: 1.5em;
-    padding: 0.6em 1.2em;
+    padding: .6em 1.2em;
 
 }
+/*mini banners */
+
+
+/*clientes */
+#clientes a.link-cliente {
+    padding: 0 15px;
+    background-color: rgb(138, 138, 138);
+    display:flex;
+    align-items: center;    
+    justify-content: center;
+    border: solid 1px var(--light);
+    height: 100px;
+    transition: ease-out all 0.2s;
+}
+#clientes a.link-cliente:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 0 rgba(0,0,0, 0.15);
+
+}
+#clientes a.link-cliente img{
+    filter: grayscale(100%);
+    max-height: 70px;
+    width: 100%;
+    opacity: 0.6 ;
+}
+
+#clientes a.link-cliente:hover img{
+    filter: none;
+    opacity: 1;
+}
+
+    #clientes .cliente-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: var(--light);
+        border-radius: 5px;
+    }
+    #clientes .cliente-texto .imagem {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        margin-left: -70px;
+        color: black;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    #clientes .cliente-texto .imagem span{
+        color:rgb(58, 58, 141);
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: -10px;
+        font-weight: 900;
+        display: block;
+    }
+    #clientes .cliente-texto .telefone{
+        display: flex;
+        font-size: 14px;
+        color: black;
+    }
+    #clientes .cliente-texto .telefone span{
+        font-size: 25px;
+        color: black;
+        font-weight: 900;
+        display: block;
+    }
+/*clientes */
+
+
+
+/*depoimentos */
+.star {
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.card .user{
+
+   width: 100px; 
+   height: 100px;
+   border-radius: 50%;
+   margin-bottom:  15px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+    font-size: 40px;
+    
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+.card{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40 px;
+
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.445);
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:  18px;
+}
+
+/*depoimentos */
+
+
