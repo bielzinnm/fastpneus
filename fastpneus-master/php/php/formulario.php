@@ -1,23 +1,17 @@
 <?php
     $nome = $_POST["nome"];
+    $telefone = $_POST["telefone"];
     $email = $_POST["email"];
-    $data_nascimento = $_POST["data_nascimento"];
-    $sexo = $_POST["sexo"];
-    $estado = $_POST["estado"];
     $senha = $_POST["senha"];
-    $confere_senha = $_POST["confere_senha"];
-    $aceita_news = 0;
-    $aceita_news = $_POST["aceite_news"];
-    $observacoes = $_POST["observacoes"];
-        if ($senha == $confere_senha)
-        {
-            $conexao = mysqli_connect('localhost','root','d4rks1d3','cad') or die("Erro ao Conectar");
-            $string = "INSERT INTO cad_cliente VALUES";
-            $string .="('$nome','$email','$data_nascimento','$sexo','$estado','$senha','$aceita_news','$observacoes')";
+    
+            $conexao = mysqli_connect('localhost','root','','fastpneus') or die("Erro ao Conectar");
+            $string = "INSERT INTO cliente VALUES";
+            $string .="('$nome','$telefone','$email','$senha')";
             mysqli_query($conexao,$string) or die("Erro ao Cadastrar");
-            echo "Cadastro Efetuado com Sucesso!";
-        }else 
-        {
-            echo "As Senhas Digitadas nao Batem";
-        }
-        
+            ?>
+            <script type="text/javascript">
+                alert('Cadastro Efetuado com Sucesso!');
+                window.location.href = "../index.html";
+            </script>
+            
+<?php
